@@ -8,7 +8,7 @@ from beacons import FooBeacon
 try:
     adapter = get_provider().get_adapter()
     beacon = FooBeacon(adapter)
-    beacon.url = 'https://narwo.dev/'
+    beacon.data = b'\x02\x01\x06\x05\x22\x08\x06\x01'
     beacon.start()
     while True:
         sleep(10)
