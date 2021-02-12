@@ -1,0 +1,1 @@
+from .FooBeacon import FooBeacon
